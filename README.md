@@ -1,4 +1,4 @@
 Communism
 =========
 
-Communism for Bukkit
+Communism for Bukkit by Thomas and Cam
