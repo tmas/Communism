@@ -33,7 +33,7 @@ public class BukkitCommunism extends JavaPlugin {
 			sender.sendMessage("You triggered BukkitCommunism! Comrade Stalin salutes you!");
 			return true;
 		} else if (cmd.getName().equalsIgnoreCase("bcd") && (sender.hasPermission("bukkitcommunism.*") || sender.hasPermission(cmd.getPermission()))) {
-			sender.sendMessage("Attempting to deposit: " + ((Player)(sender)).getItemInHand().getAmount() + " " + ((Player)(sender)).getItemInHand());
+			sender.sendMessage("Attempting to deposit: " + ((Player)(sender)).getItemInHand().getAmount() + " " + ((Player)(sender)).getItemInHand().getType().name());
 			Material type = ((Player)(sender)).getItemInHand().getType();
 			int amount = ((Player)(sender)).getItemInHand().getAmount();
 			if (vault.containsKey(type)) {
