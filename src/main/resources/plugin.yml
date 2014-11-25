@@ -1,3 +1,34 @@
 name: BukkitCommunism
 main: de.lostco.bukkitcommunism.BukkitCommunism
 version: 0.1a
+commands:
+   BukkitCommunism:
+      description: Gather, comrades.
+      usage: /<command>
+      permission: <plugin name>.use
+      permission-message: You don't have <permission>
+   bcd:
+      description: Deposit items into The People's Bank
+      usage: /command
+      permission: <plugin name>.deposit
+      permission-message: You don't have <permission>
+   bcw:
+      description: Withdraw items from The People's Bank
+      usage: /command [item] {amount}
+      permission: <plugin name>.withdraw
+      permission-message: You don't have <permission>
+   bcset:
+      description: Set the amount of items in The People's Bank
+      usage: /command [item] [amount]
+      permission: <plugin name>.set
+      permission-message: You don't have <permission>
+   bcget:
+      description: Get the amount of items in The People's Bank
+      usage: /command [item]
+      permission: <plugin name>.set
+      permission-message: You don't have <permission>
+   bcname:
+      description: Check the material name of an item
+      usage: /command
+      permission: <plugin name>.name
+      permission-message: You don't have <permission>
